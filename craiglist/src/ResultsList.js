@@ -1,10 +1,14 @@
 import React from 'react'
 
-const ResultsList = () => {
+
+const ResultsList = (props) => {
+ 
     return(
-        <>
-        <h3>Results List</h3>
-        </>
+        <div className='cards'>
+            <img className="item-picture" src="{props.picture}"/>{props.picture}
+            <div className="item-name">{props.name}</div>
+            <div className="item-price">${props.price}</div>
+        </div>
     )
 }
 
